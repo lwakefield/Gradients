@@ -1,0 +1,52 @@
+@import "lesshat.less";
+
+@turquoise: #1ABC9C;
+@greensea: #16A085;
+@emerald: #2ECC71;
+@nephritis: #27AE60;
+@skyblue: #3498DB;
+@belizehole: #2980B9;
+@amethyst: #9B59B6;
+@wisteria: #8E44AD;
+@asphalt: #34495E;
+@midnightblue: #2C3E50;
+@sunflower: #F1C40F;
+@orange: #F39C12;
+@carrot: #E67E22;
+@pumpkin: #D35400;
+@alizarin: #E74C3C;
+@pomegranate: #C0392B;
+@clouds: #ECF0F1;
+@silver: #BDC3C7;
+@concrete: #95A5A6;
+@asbestos: #7F8C8D;
+@midnightblack: #191919;
+
+.gradient-glow {
+    color: clouds;
+    background: @midnightblue;
+    .background-image(radial-gradient(top, circle cover, lighten(@midnightblue, 10%) 0%, @midnightblue 80%));
+}
+.gradient-spotted {
+    color: clouds;
+    background: @midnightblue;
+    .background-image(radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), linear-gradient(top, rgba(57,173,219,.25) 0%, rgba(42,60,87,.4) 100%), linear-gradient(-45deg, @pomegranate 0%, @midnightblue 100%));
+}
+.gradient-soft {
+    background: @concrete;
+    .background-image(linear-gradient(@concrete, @clouds));
+    .box-shadow(inset 0 0 100px hsla(0,0%,0%,.3));
+}
+.gradient-calm {
+    background: #699bc8;
+    .background-image(radial-gradient(top left, ellipse cover, lighten(@skyblue, 15%) 0%, lighten(@skyblue, 30%) 57%));
+}
+.gradient-faded {
+    background: #c2e9dd;
+    .background-image(linear-gradient(45deg, rgba(194, 233, 221, 0.5) 1%, rgba(104, 119, 132, 0.5) 100%), linear-gradient(-45deg, @midnightblue 0%, rgba(217, 230, 185, 0.5) 80%));
+}
+.gradient-accent {
+    color: clouds;
+    background: #f4e29c;
+    .background-image(linear-gradient(-45deg, rgba(244,226,156,0) 0%, rgba(59,41,58,1) 100%), linear-gradient(left, rgba(244,226,156,1) 0%, rgba(130,96,87,1) 100%));
+}
